@@ -1,0 +1,9 @@
+{
+  "name": "funky-quarks",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:brooke-k/funky-quarks.git",
+  "author": "Brooke Kindleman <brooke.kindleman@gmail.com>",
+  "license": "MIT",
+  "private": true
+}
