@@ -1,6 +1,6 @@
 {
-  "name": "electron-base",
-  "productName": "electron-base",
+  "name": "funky-quarks",
+  "productName": "funky-quarks",
   "version": "1.0.0",
   "description": "My Electron application description",
   "main": ".webpack/main",
@@ -24,7 +24,7 @@
         {
           "name": "@electron-forge/maker-squirrel",
           "config": {
-            "name": "electron_base"
+            "name": "funky_quarks"
           }
         },
         {
@@ -51,7 +51,7 @@
               "config": "./webpack.renderer.config.js",
               "entryPoints": [
                 {
-                  "html": "./src/index.html",
+                  "html": "./public/index.html",
                   "js": "./src/renderer.ts",
                   "name": "main_window"
                 }
