@@ -15,6 +15,20 @@ $powder-blue: #b8dbd9ff;
 $isabelline: rgb(255, 253, 251);
 $wild-blue-yonder: #9eadc8ff;
 
+$uni-black: #090909ff;
+$uni-red: #ff858dff;
+$uni-orange: #fba961ff;
+$uni-yellow: #f9dc5cff;
+$uni-green: #88c599ff;
+$uni-blue: #7da7b1ff;
+$uni-purple: #796a83ff;
+$uni-white: #ffffebff;
+$uni-grey: #808f85ff;
+$uni-brown: #716969ff;
+$uni-dark: rgb(33, 22, 41);
+
+
+
 $rich-black-fogra-39: #0a0908ff;
 $gunmetal: #202b30ff;
 $bitter-lime: #c9ff26ff;
@@ -36,34 +50,51 @@ $orange-peel: rgb(255, 173, 79);
 }
 
 @font-face {
-  font-family: 'Xotzky';
-  src: url(./font/Xotzky.ttf);
+  font-family: 'Creato Bold';
+  src: url(./font/creato/CreatoDisplay-Bold.otf);
+}
+
+@font-face {
+  font-family: 'Creato';
+  src: url(./font/creato/CreatoDisplay-Regular.otf);
+}
+
+@font-face {
+  font-family: 'Love';
+  src: url(./font/Love.ttf);
+
+}
+
+@font-face {
+  font-family: 'Sprinkle';
+  src: url(./font/Sprinkle-Regular.ttf);
 }
 
 body {
-  background: -webkit-linear-gradient(260deg, hsla(30, 11%, 4%, 1) 53%, hsla(199, 20%, 16%, 1) 100%);
+  background: linear-gradient(180deg, hsla(191, 59%, 94%, 1) 0%, hsla(27, 100%, 93%, 1) 100%);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
 
 .headBar {
-  background: -webkit-linear-gradient(180deg, hsla(199, 20%, 16%, 1) 26%, hsla(199, 20%, 16%, 0) 100%);
+  background: linear-gradient(270deg, hsla(356, 100%, 76%, 0.8) 0%, hsla(49, 93%, 67%, 0.3) 100%);
   float: inline-start;
   position: relative;
   border-width: 0vw;
   margin: 0vw;
-
-
+  border-radius: 1.25vw;
   text-align: start;
   padding-inline-end: 2vw;
-  color: $bitter-lime;
-  font-family: 'Xotzky';
-  padding-top: 20px;
+  color: $uni-dark;
+  letter-spacing: 1vw;
+  font-family: 'Sprinkle';
+  padding-top: 12px;
   padding-left: 1vw;
-  font-size: 28px;
-  font-weight: 400;
-  min-height: 50px;
+  font-size: 32px;
+  font-weight: 200;
+  min-height: 42px;
+  max-height: 20vh;
 
 
 }
@@ -71,22 +102,24 @@ body {
 
 
 .navBar {
-  background: #202b3080;
+  background: $uni-purple;
   display: block;
   position: relative;
   margin: 0px;
   margin-top: 1%;
   margin-left: 1%;
   float: right;
-  font-family: 'Manrope';
+  font-family: 'Creato Bold';
   color: $orange-peel;
-  font-size: large;
   text-align: right;
+  padding-block: 1%;
   padding-right: 1%;
   padding-left: 2%;
-  padding-block: 1%;
   border-radius: 4px;
-  border-width: 8px;
+  font-weight: 500;
+  min-width: 10vw;
+
+
 
 }
 
@@ -94,11 +127,14 @@ body {
   list-style-type: none;
   background: none;
   background-color: #0000;
+  border: none;
+
+
 }
 
 
 :link {
-  color: $orange-peel;
+  color: $uni-white;
   font-style: normal;
   text-decoration: none;
   background: none;
@@ -114,11 +150,17 @@ p {
   display: block;
   position: fixed;
   float: left;
-  width: 85vw;
-  font-family: 'Manrope';
-  margin-right: 2%;
-  background-color: $bitter-lime;
-  color: $rich-black-fogra-39;
-  min-width: fit-content;
+  width: 80vw;
+  font-family: 'Creato';
+  margin-left: 3vw;
+  margin-right: 0px;
+  background-color: $uni-white;
+  color: $uni-black;
+  min-width: 30vw;
+  height: 70vh;
+  min-height: max-content;
+  border-radius: 1vw;
+  padding-block: 2vh;
+  padding-inline: 1.5vw;
 
 }
