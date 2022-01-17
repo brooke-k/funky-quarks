@@ -15,6 +15,7 @@ import { Header } from "./components/header";
 import { MemoryRouter as Router, Link, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Unicorns from "./pages/Unicorns";
+import { Footer } from "./components/footer";
 const MainApp: React.FC = () => {
   return (
     <>
@@ -37,6 +38,7 @@ const MainApp: React.FC = () => {
             <Route path="/" element={<Home />}></Route>
           </Routes>
         </div>
+        <Footer />
       </Router>
     </>
   );

@@ -5,7 +5,12 @@
  *
  */
 
-@use '../theme/variables';
+
+@font-face {
+  font-family: 'Sprinkle';
+  src: url(../theme/font/Sprinkle-Regular.ttf);
+}
+
 
 
 .headerBlock {

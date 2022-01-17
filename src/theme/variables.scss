@@ -70,12 +70,18 @@ $orange-peel: rgb(255, 173, 79);
   src: url(./font/Sprinkle-Regular.ttf);
 }
 
+@font-face {
+  font-family: 'Unicorn';
+  src: url(./font/Unicorn.ttf);
+}
+
 body {
   background: linear-gradient(180deg, hsla(191, 59%, 94%, 1) 0%, hsla(27, 100%, 93%, 1) 100%);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
+
 
 .headBar {
   background: linear-gradient(270deg, hsla(356, 100%, 76%, 0.8) 0%, hsla(49, 93%, 67%, 0.3) 100%);
@@ -95,8 +101,24 @@ body {
   font-weight: 200;
   min-height: 42px;
   max-height: 20vh;
+}
 
-
+.footerBar {
+  background: linear-gradient(90deg, rgb(174, 255, 197) 0%, rgb(149, 187, 197) 49%, rgb(156, 107, 187) 100%);
+  position: fixed;
+  margin-bottom: 0px;
+  text-align: right;
+  font-size: 1.6vh;
+  height: 2vh;
+  right: 0;
+  bottom: 1vh;
+  width: 100vw;
+  padding-inline: 3vw;
+  padding-bottom: 1vh;
+  padding-top: 1.5vh;
+  color: $uni-white;
+  font-family: 'Sprinkle';
+  letter-spacing: 0.4vw;
 }
 
 
@@ -105,19 +127,16 @@ body {
   background: $uni-purple;
   display: block;
   position: relative;
-  margin: 0px;
-  margin-top: 1%;
-  margin-left: 1%;
+  margin-top: 2vh;
+  margin-right: 2vw;
+  margin-left: 0vw;
   float: right;
   font-family: 'Creato Bold';
   color: $orange-peel;
   text-align: right;
-  padding-block: 1%;
-  padding-right: 1%;
-  padding-left: 2%;
-  border-radius: 4px;
+  width: 13vw;
+  border-radius: 0.75vw;
   font-weight: 500;
-  min-width: 10vw;
 
 
 
@@ -150,17 +169,26 @@ p {
   display: block;
   position: fixed;
   float: left;
-  width: 80vw;
-  font-family: 'Creato';
+  width: 75vw;
   margin-left: 3vw;
+  margin-top: 2vh;
   margin-right: 0px;
-  background-color: $uni-white;
+  background: linear-gradient(180deg, hsla(161, 100%, 93%, 0.8) 0%, hsla(276, 100%, 92%, 0.3) 100%);
   color: $uni-black;
-  min-width: 30vw;
+  min-width: 20vw;
   height: 70vh;
   min-height: max-content;
   border-radius: 1vw;
   padding-block: 2vh;
   padding-inline: 1.5vw;
-
+  font-family: 'Manrope';
 }
+
+.primaryText.unicornParagraph {
+  font-family: 'Unicorn';
+  font-size: 48vw;
+  text-align: center;
+  color: $uni-red;
+}
+
+@forward "primaryText";
