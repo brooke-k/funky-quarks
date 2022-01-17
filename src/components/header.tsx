@@ -6,7 +6,7 @@ export class Header extends React.Component {
   render() {
     return (
       <div>
-        <h1 className="header">Header Section</h1>
+        <h1 className="headBar">Funky Quarks</h1>
       </div>
     );
   }

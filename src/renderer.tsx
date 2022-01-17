@@ -33,10 +33,18 @@ console.log(
 import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
-import MainApp from "./MainApp";
+import { createStore } from "redux";
+import rootReducer from "./app/reducer";
+import store from "./app/store";
+import MainApp from "./Main";
 
 import "./theme/variables.scss";
 
 const b = <MainApp />;
 
-ReactDOM.render(b, document.getElementById("root"));
+ReactDOM.render(
+  <Provider store={store}>
+    <MainApp />
+  </Provider>,
+  document.getElementById("root")
+);
