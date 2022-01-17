@@ -2,7 +2,7 @@ import "./theme/variables.scss";
 
 import React, { Component } from "react";
 import { ReactDOM } from "react";
-import MainApp from "./MainApp";
+import MainApp from "./Main";
 
 const Base: React.FC = () => <h2></h2>;
 

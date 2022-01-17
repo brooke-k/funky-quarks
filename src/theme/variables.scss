@@ -4,19 +4,30 @@
  * Date: 15/Jan/2022
  *
  */
-$sizzling-red: #ff595eff;
-$sunglow: #ffca3aff;
-$french-violet: #6f2dbdff;
-$amethyst: #a663ccff;
-$wisteria: #b298dcff;
-$beau-blue: #b8d0ebff;
-$celeste: #b9faf8ff;
-$xanadu: #7b886fff;
-$xiketic: #1a090dff;
+$raisin-black: #221d23ff;
+$gunmetal-light: #27373fff;
+$cafe-noir: #4f3824ff;
+$copper-red: #d1603dff;
+$maximum-yellow-red: #ddb967ff;
+$yellow-green-crayola: #d0e37fff;
+$green-sheen: #86ac9fff;
+$powder-blue: #b8dbd9ff;
+$isabelline: rgb(255, 253, 251);
+$wild-blue-yonder: #9eadc8ff;
+
+$rich-black-fogra-39: #0a0908ff;
+$gunmetal: #202b30ff;
+$bitter-lime: #c9ff26ff;
+$brink-pink: #ff607dff;
+$steel-teal: #668f88ff;
+$orange-peel: rgb(255, 173, 79);
 
 @forward '.';
 
-@import './font/overpass/Overpass-VariableFont_wght.ttf';
+@font-face {
+  font-family: 'Manrope';
+  src: url(./font/manrope/Manrope-VariableFont_wght.ttf);
+}
 
 @font-face {
   font-family: 'Overpass';
@@ -24,28 +35,90 @@ $xiketic: #1a090dff;
 
 }
 
+@font-face {
+  font-family: 'Xotzky';
+  src: url(./font/Xotzky.ttf);
+}
+
 body {
-  background: linear-gradient(0deg, rgb(30, 8, 56) 0%, rgb(20, 18, 39) 56%, rgb(20, 18, 39) 100%);
+  background: -webkit-linear-gradient(260deg, hsla(30, 11%, 4%, 1) 53%, hsla(199, 20%, 16%, 1) 100%);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
 
-.header {
-  background: linear-gradient(90deg, rgba(110, 45, 190, 0.205) 0%, rgba(73, 57, 214, 0.678) 100%);
+.headBar {
+  background: -webkit-linear-gradient(180deg, hsla(199, 20%, 16%, 1) 26%, hsla(199, 20%, 16%, 0) 100%);
+  float: inline-start;
   position: relative;
-  display: block;
-  margin: 0px;
-  border: 10px;
-  padding: 2%;
-  color: #FFF8EB;
-  text-align: end;
-  font: 'Overpass';
-  font-size: 36px;
-  font-weight: 200;
-  border-radius: 16px;
+  border-width: 0vw;
+  margin: 0vw;
+
+
+  text-align: start;
+  padding-inline-end: 2vw;
+  color: $bitter-lime;
+  font-family: 'Xotzky';
+  padding-top: 20px;
+  padding-left: 1vw;
+  font-size: 28px;
+  font-weight: 400;
+  min-height: 50px;
+
+
 }
 
-html {
-  font-family: 'Overpass';
+
+
+.navBar {
+  background: #202b3080;
+  display: block;
+  position: relative;
+  margin: 0px;
+  margin-top: 1%;
+  margin-left: 1%;
+  float: right;
+  font-family: 'Manrope';
+  color: $orange-peel;
+  font-size: large;
+  text-align: right;
+  padding-right: 1%;
+  padding-left: 2%;
+  padding-block: 1%;
+  border-radius: 4px;
+  border-width: 8px;
+
+}
+
+.navBar.list {
+  list-style-type: none;
+  background: none;
+  background-color: #0000;
+}
+
+
+:link {
+  color: $orange-peel;
+  font-style: normal;
+  text-decoration: none;
+  background: none;
+  background-color: #0000;
+}
+
+
+p {
+  color: $isabelline;
+}
+
+.primaryText {
+  display: block;
+  position: fixed;
+  float: left;
+  width: 85vw;
+  font-family: 'Manrope';
+  margin-right: 2%;
+  background-color: $bitter-lime;
+  color: $rich-black-fogra-39;
+  min-width: fit-content;
+
 }
