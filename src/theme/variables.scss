@@ -1,6 +1,51 @@
 /**
- * File: variables.scss
+ * File: variables.css
  * @author Brooke Kindleman (brooke.kindleman@gmail.com)
  * Date: 15/Jan/2022
  *
  */
+$sizzling-red: #ff595eff;
+$sunglow: #ffca3aff;
+$french-violet: #6f2dbdff;
+$amethyst: #a663ccff;
+$wisteria: #b298dcff;
+$beau-blue: #b8d0ebff;
+$celeste: #b9faf8ff;
+$xanadu: #7b886fff;
+$xiketic: #1a090dff;
+
+@forward '.';
+
+@import './font/overpass/Overpass-VariableFont_wght.ttf';
+
+@font-face {
+  font-family: 'Overpass';
+  src: url(./font/overpass/Overpass-VariableFont_wght.ttf);
+
+}
+
+body {
+  background: linear-gradient(0deg, rgb(30, 8, 56) 0%, rgb(20, 18, 39) 56%, rgb(20, 18, 39) 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.header {
+  background: linear-gradient(90deg, rgba(110, 45, 190, 0.205) 0%, rgba(73, 57, 214, 0.678) 100%);
+  position: relative;
+  display: block;
+  margin: 0px;
+  border: 10px;
+  padding: 2%;
+  color: #FFF8EB;
+  text-align: end;
+  font: 'Overpass';
+  font-size: 36px;
+  font-weight: 200;
+  border-radius: 16px;
+}
+
+html {
+  font-family: 'Overpass';
+}
