@@ -6,17 +6,14 @@
  */
 
 import * as React from "react";
-import * as ReactDOM from "react-dom";
-
-import { Component } from "react";
-
+import "./theme/App.scss";
 import "./theme/variables.scss";
-import { Header } from "./components/header";
+import { Header } from "./components/Header";
 import { MemoryRouter as Router, Link, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Unicorns from "./pages/Unicorns";
-import { Footer } from "./components/footer";
-const MainApp: React.FC = () => {
+import { Footer } from "./components/Footer";
+const App: React.FC = () => {
   return (
     <>
       <Router>
@@ -44,13 +41,4 @@ const MainApp: React.FC = () => {
   );
 };
 
-/* export const Main = () => {
-  return (
-    <IonContent color="red">
-      <IonHeader>
-        <IonTitle>Ahoy Bitches</IonTitle>
-      </IonHeader>
-    </IonContent>
-  );
-}; */
-export default MainApp;
+export default App;

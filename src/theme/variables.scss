@@ -40,39 +40,39 @@ $orange-peel: rgb(255, 173, 79);
 
 @font-face {
   font-family: 'Manrope';
-  src: url(./font/manrope/Manrope-VariableFont_wght.ttf);
+  src: url(../theme/font/manrope/Manrope-VariableFont_wght.ttf);
 }
 
 @font-face {
   font-family: 'Overpass';
-  src: url(./font/overpass/Overpass-VariableFont_wght.ttf);
+  src: url(../theme/font/overpass/Overpass-VariableFont_wght.ttf);
 
 }
 
 @font-face {
   font-family: 'Creato Bold';
-  src: url(./font/creato/CreatoDisplay-Bold.otf);
+  src: url(../theme/font/creato/CreatoDisplay-Bold.otf);
 }
 
 @font-face {
   font-family: 'Creato';
-  src: url(./font/creato/CreatoDisplay-Regular.otf);
+  src: url(../theme/font/creato/CreatoDisplay-Regular.otf);
 }
 
 @font-face {
   font-family: 'Love';
-  src: url(./font/Love.ttf);
+  src: url(../theme/font/Love.ttf);
 
 }
 
 @font-face {
   font-family: 'Sprinkle';
-  src: url(./font/Sprinkle-Regular.ttf);
+  src: url(../theme/font/Sprinkle-Regular.ttf);
 }
 
 @font-face {
   font-family: 'Unicorn';
-  src: url(./font/Unicorn.ttf);
+  src: url(../theme/font/Unicorn.ttf);
 }
 
 body {
@@ -83,27 +83,6 @@ body {
 }
 
 
-.headBar {
-  background: linear-gradient(270deg, hsl(356, 100%, 81%) 0%, hsl(49, 100%, 86%) 100%);
-  float: inline-start;
-  position: relative;
-  border-width: 0vw;
-  margin: 0vw;
-  border-radius: 1.25vw;
-  text-align: start;
-  padding-inline-end: 2vw;
-  color: $uni-dark;
-  letter-spacing: 1vw;
-  font-family: 'Sprinkle';
-  padding-top: 12px;
-  padding-left: 1vw;
-  font-size: 32px;
-  font-weight: 200;
-  min-height: 42px;
-  max-height: 20vh;
-  filter: drop-shadow(0.3vw 0.5vh 0.2vw rgba(82, 68, 92, 0.658));
-
-}
 
 .footerBar {
   background: linear-gradient(90deg, rgb(174, 255, 197) 0%, rgb(149, 187, 197) 49%, rgb(156, 107, 187) 100%);
@@ -123,7 +102,6 @@ body {
   letter-spacing: 0.4vw;
   filter: drop-shadow(0.3vw 0.5vh 0.2vw rgba(82, 68, 92, 0.658));
 }
-
 
 
 .navBar {
@@ -154,6 +132,9 @@ body {
 
 }
 
+:link:hover {
+  filter: drop-shadow(10px 10px 10px 10px #8888);
+}
 
 :link {
   color: $uni-white;
@@ -161,6 +142,7 @@ body {
   text-decoration: none;
   background: none;
   background-color: #0000;
+  transition: 0.2s ease-in;
 }
 
 

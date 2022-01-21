@@ -36,15 +36,15 @@ import { Provider } from "react-redux";
 import { createStore } from "redux";
 import rootReducer from "./app/reducer";
 import store from "./app/store";
-import MainApp from "./Main";
+import App from "./App";
 
 import "./theme/variables.scss";
 
-const b = <MainApp />;
+const b = <App />;
 
 ReactDOM.render(
   <Provider store={store}>
-    <MainApp />
+    <App />
   </Provider>,
   document.getElementById("root")
 );
