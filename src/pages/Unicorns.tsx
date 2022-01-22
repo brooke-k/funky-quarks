@@ -1,5 +1,5 @@
 import React from "react";
-import "../theme/variables.scss";
+import "../pages/Unicorn.scss";
 
 function randomLetter() {
   if (Math.floor(Math.random()) == 0) {
@@ -12,7 +12,11 @@ function randomLetter() {
 }
 
 const Home: React.FC = () => {
-  return <p className="primaryText unicornParagraph">{randomLetter()}</p>;
+  return (
+    <>
+      <div className="primaryText unicornParagraph">{randomLetter()}</div>
+    </>
+  );
 };
 
 export default Home;

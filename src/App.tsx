@@ -13,6 +13,7 @@ import { MemoryRouter as Router, Link, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Unicorns from "./pages/Unicorns";
 import { Footer } from "./components/Footer";
+import Movement from "./pages/Movement";
 const App: React.FC = () => {
   return (
     <>
@@ -27,11 +28,15 @@ const App: React.FC = () => {
               <li>
                 <Link to="/unicorns">Unicorns</Link>
               </li>
+              <li>
+                <Link to="/movement">Movement</Link>
+              </li>
             </ul>
           </nav>
           <Routes>
             <Route path="/home" element={<Home />}></Route>
             <Route path="/unicorns" element={<Unicorns />}></Route>
+            <Route path="/movement" element={<Movement />}></Route>
             <Route path="/" element={<Home />}></Route>
           </Routes>
         </div>

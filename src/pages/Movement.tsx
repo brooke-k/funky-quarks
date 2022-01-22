@@ -1,12 +1,25 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../theme/variables.scss";
 
-function captureCoordinates(event: { movementX: any; movementY: any }) {
-  return `movement: ${event.movementX}, ${event.movementY}`;
-}
-
 const Movement: React.FC = () => {
-  return <p className="primaryText">this will be movement</p>;
+  const [xPosition, setXPosition] = useState<Number>();
+  const [yPosition, setYPosition] = useState<Number>();
+
+  useEffect(() => {
+    const update = (e: {
+      x: React.SetStateAction<Number>;
+      y: React.SetStateAction<Number>;
+    }) => {
+      setXPosition(e.x);
+      setYPosition(e.y);
+    };
+    window.addEventListener("mousemove", update);
+    return () => {
+      window.removeEventListener("mousemove", update);
+    };
+  });
+
+  return <p className="primaryText">{xPosition}</p>;
 };
 
 export default Movement;

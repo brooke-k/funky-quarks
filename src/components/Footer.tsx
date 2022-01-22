@@ -1,8 +1,12 @@
-import "../theme/variables.scss";
+import "./Footer.scss";
 import React from "react";
 
 export class Footer extends React.Component {
   render() {
-    return (<div> <h1 className="footerBar">a small app by brooke kindleman</h1> </div>);
+    return (
+      <>
+        <h1 className="footer">a small app by brooke kindleman</h1>
+      </>
+    );
   }
 }

@@ -1,0 +1,21 @@
+@import '../theme/variables.scss';
+
+.primaryText {
+  display: block;
+  position: fixed;
+  float: left;
+  width: 75vw;
+  margin-left: 3vw;
+  margin-top: 2vh;
+  margin-right: 0px;
+  background: linear-gradient(180deg, hsl(161, 100%, 94%) 0%, hsl(276, 100%, 95%) 100%);
+  color: $uni-black;
+  min-width: 20vw;
+  height: 70vh;
+  min-height: max-content;
+  border-radius: 1vw;
+  padding-block: 2vh;
+  padding-inline: 1.5vw;
+  font-family: 'Manrope';
+  filter: drop-shadow(0.3vw 0.5vh 0.2vw rgba(82, 68, 92, 0.658));
+}
