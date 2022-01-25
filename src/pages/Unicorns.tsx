@@ -7,6 +7,7 @@ function randomLetter() {
   } else {
     return String.fromCharCode(Math.floor(Math.random() * (122 - 97) + 97));
   }
+
   const ascciVal = Math.random() * (90 - 65) + 65;
   return String.fromCharCode(ascciVal);
 }
@@ -32,7 +33,9 @@ const Home: React.FC = () => {
     const update = (e: any) => {
       setRanNum(randomNumber());
     };
+
     window.addEventListener("keypress", update);
+
     return () => {
       window.removeEventListener("keypress", update);
     };
@@ -40,9 +43,11 @@ const Home: React.FC = () => {
 
   return (
     <>
+      {" "}
       <div id="mouseTarget" className="primaryText unicornParagraph">
+        {" "}
         {getLetter(ranNum)}
-      </div>
+      </div>{" "}
     </>
   );
 };

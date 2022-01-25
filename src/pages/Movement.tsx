@@ -1,8 +1,43 @@
 import React, { useEffect, useState } from "react";
 import "../theme/variables.scss";
+import "./Movement.scss";
 
 const Movement: React.FC = () => {
-  const [xPosition, setXPosition] = useState<Number>();
+  const [currentState, setCurrentState] = useState("STATIONARY");
+  return (
+    <div className="gridContainment">
+      <button className="gridButton b1" />
+      <button className="gridButton b1" />
+      <button className="gridButton b1" />
+      <button className="gridButton b1" />
+      <button className="gridButton b2" />
+      <button className="gridButton b2" />
+      <button className="gridButton b2" />
+      <button className="gridButton b2" />
+      <button className="gridButton b3" />
+      <button className="gridButton b3" />
+      <button className="gridButton b3" />
+      <button className="gridButton b3" />
+      <button className="gridButton b4" />
+      <button className="gridButton b4" />
+      <button className="gridButton b4" />
+      <button className="gridButton b4" />
+    </div>
+  );
+};
+
+export default Movement;
+
+/* <div
+      className="movementText"
+      draggable="true"
+      onDragStart={() => setCurrentState("BEING DRAGGED")}
+      onDragEnd={() => setCurrentState("STATIONARY")}
+    >
+      {currentState}
+    </div> */
+
+/*   const [xPosition, setXPosition] = useState<Number>();
   const [yPosition, setYPosition] = useState<Number>();
 
   useEffect(() => {
@@ -19,7 +54,4 @@ const Movement: React.FC = () => {
     };
   });
 
-  return <p className="primaryText">{xPosition}</p>;
-};
-
-export default Movement;
+  return <p className="primaryText">{xPosition}</p>; */
