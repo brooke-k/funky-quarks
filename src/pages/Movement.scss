@@ -58,39 +58,100 @@
   border-color: #FFF8 rgba(82, 68, 92, 0.658) rgba(82, 68, 92, 0.658)#FFF8;
 }
 
-button.gridButton {
+div.gridButton {
   background: $uni-dark;
   border: none;
   border-radius: inherit;
+  position: sticky;
   content: "";
   box-shadow: 0px 0px 2px 0px #fff0, 0px 0px 2px 0px #fff0, inset 0.5vw 0.5vh 0 0 rgba(250, 244, 255, 0);
   transition: 250ms ease-out;
 }
 
-button.gridButton.b1:hover {
+div.gridButton.b1:hover {
   // background: linear-gradient(rgb(255, 119, 176) 5%, rgb(255, 234, 112) 95%);
   background-color: $uni-red;
   box-shadow: 0px 0px 3vw 1vw $uni-red, 0px 0px 0.75vw 0.5vw $uni-white, inset 1vw 1vh 0.2vw 0 rgba(250, 244, 255, 0.4), inset -1vw -1vh 0.2vw 0 rgba(22, 2, 36, 0.4);
   z-index: 1;
 }
 
-button.gridButton.b2:hover {
+div.gridButton.b2:hover {
   // background: linear-gradient(rgb(255, 234, 112) 5%, rgb(142, 255, 208) 95%);
   background-color: $uni-orange;
   box-shadow: 0px 0px 3vw 1vw $uni-orange, 0px 0px 0.75vw 0.5vw $uni-white, inset 1vw 1vh 0.2vw 0 rgba(250, 244, 255, 0.4), inset -1vw -1vh 0.2vw 0 rgba(22, 2, 36, 0.4);
   z-index: 1;
 }
 
-button.gridButton.b3:hover {
+div.gridButton.b3:hover {
   // background: linear-gradient(rgb(142, 255, 208) 5%, rgb(204, 149, 255) 95%);
   background-color: $uni-yellow;
   box-shadow: 0px 0px 3vw 1vw $uni-yellow, 0px 0px 0.75vw 0.5vw $uni-white, inset 1vw 1vh 0.2vw 0 rgba(250, 244, 255, 0.4), inset -1vw -1vh 0.2vw 0 rgba(22, 2, 36, 0.4);
   z-index: 1;
 }
 
-button.gridButton.b4:hover {
+div.gridButton.b4:hover {
   // background: linear-gradient(rgb(204, 149, 255) 5%, rgb(255, 119, 176) 95%);
   background-color: $uni-green;
   box-shadow: 0px 0px 3vw 1vw $uni-green, 0px 0px 0.75vw 0.5vw $uni-white, inset 1vw 1vh 0.2vw 0 rgba(250, 244, 255, 0.4), inset -1vw -1vh 0.2vw 0 rgba(22, 2, 36, 0.4);
   z-index: 1;
+}
+
+div.gridButton.shinyOnly {
+  background-color: transparent;
+  height: 100%;
+  width: 100%;
+  content: "";
+}
+
+div.gridButton.shinyOnly.active {
+  z-index: 1;
+  background: transparent;
+  animation: shining 300ms;
+  content: "";
+}
+
+@keyframes shining {
+  0% {
+    background: linear-gradient(75deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 0%, rgba(128, 186, 232, 0) 99%, rgba(125, 185, 232, 0) 100%);
+  }
+
+  10% {
+    background: linear-gradient(75deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 10%, rgba(128, 186, 232, 0) 99%, rgba(125, 185, 232, 0) 100%);
+  }
+
+  20% {
+    background: linear-gradient(75deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 22%, rgba(128, 186, 232, 0) 99%, rgba(125, 185, 232, 0) 100%);
+  }
+
+  30% {
+    background: linear-gradient(75deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 37%, rgba(128, 186, 232, 0) 99%, rgba(125, 185, 232, 0) 100%);
+  }
+
+  40% {
+    background: linear-gradient(75deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 50%, rgba(128, 186, 232, 0) 99%, rgba(125, 185, 232, 0) 100%);
+  }
+
+  50% {
+    background: linear-gradient(75deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 62%, rgba(128, 186, 232, 0) 99%, rgba(125, 185, 232, 0) 100%);
+  }
+
+  60% {
+    background: linear-gradient(75deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 78%, rgba(128, 186, 232, 0) 99%, rgba(125, 185, 232, 0) 100%);
+  }
+
+  70% {
+    background: linear-gradient(75deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 84%, rgba(128, 186, 232, 0) 99%, rgba(125, 185, 232, 0) 100%);
+  }
+
+  80% {
+    background: linear-gradient(75deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 93%, rgba(128, 186, 232, 0) 99%, rgba(125, 185, 232, 0) 100%);
+  }
+
+  90% {
+    background: linear-gradient(75deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 97%, rgba(128, 186, 232, 0) 99%, rgba(125, 185, 232, 0) 100%);
+  }
+
+  100% {
+    background: linear-gradient(75deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 100%, rgba(128, 186, 232, 0) 99%, rgba(125, 185, 232, 0) 100%);
+  }
 }
