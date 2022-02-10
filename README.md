@@ -23,13 +23,14 @@ Electron boilerplate code has already been created in the root directory.
 
 
 ```bash
+yarn install
 
-yarn add react react-dom
-yarn add --dev @types/react @types/react-dom
+```
 
-yarn add @ionic/react
-yarn add @ionic/react-router
+### Program Execution
 
-yarn add --dev node-sass
+To run development environment use command
 
+```bash
+yarn start
 ```
