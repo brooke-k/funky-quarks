@@ -1,0 +1,10 @@
+@import '../theme/variables.scss';
+
+body {
+  background-color: $app-background;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-block: 0;
+  margin-inline: 0;
+}

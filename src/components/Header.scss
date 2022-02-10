@@ -2,7 +2,7 @@
 
 
 .headBar {
-  background: linear-gradient(270deg, hsl(356, 100%, 81%) 0%, hsl(49, 100%, 86%) 100%);
+  background-color: blue;
   float: inline-start;
   position: relative;
   border-width: 0vw;
@@ -20,30 +20,19 @@
   min-height: 42px;
   max-height: 20vh;
   filter: drop-shadow(0.3vw 0.5vh 0.2vw rgba(82, 68, 92, 0.658));
-
 }
 
 h1.header {
-  background: linear-gradient(270deg, hsl(356, 100%, 81%) 0%, hsl(49, 100%, 86%) 100%);
+  background-color: $header-footer-background;
   float: inline-start;
   position: relative;
-  border-width: 0vw;
-  margin: 0vw;
-  border-radius: 1.25vw;
-  text-align: start;
-  padding-inline-end: 2vw;
-  color: $uni-dark;
-  letter-spacing: 1vw;
-  font-family: 'Sprinkle';
-  padding-top: 12px;
-  padding-left: 1vw;
-  font-size: 32px;
-  font-weight: 200;
-  min-height: 42px;
-  max-height: 20vh;
-  filter: drop-shadow(0.3vw 0.5vh 0.2vw rgba(82, 68, 92, 0.658));
-  transition: 0.7s ease-in-out;
-  z-index: 1;
+  margin: 0px;
+  height: 32px;
+
+  border-width: 0px 0 1px 0;
+  border-color: $header-footer-border;
+  border-style: solid;
+  box-shadow: inset 0px -2px 2px $header-footer-border;
 }
 
 h1::before,

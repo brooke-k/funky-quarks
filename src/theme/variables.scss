@@ -5,14 +5,23 @@
  *
  */
 
-$baby-pink: #FFD4CA;
-$amaranth-pink: #A93F55;
-$prince-orange: #ED7D3A;
-$june-green: #C5D86D;
-$bottle-green: #226F54;
-$green-blue: #AFE0CE;
-$eerie-black: #191919;
-$raisin-black: #221d23ff;
+
+$fq-red: #A63038;
+$fq-orange:#F39972;
+$fq-dusty-pink:#CE9D9C;
+$fq-pink:#DC7F81;
+$fq-light-green:#99BB7C;
+$fq-dark-green:#283E37;
+$fq-cyan:#699DA5;
+$fq-black:#1B1726;
+$fq-tan: #B99D88;
+$fq-white:#FBF3E9;
+
+$app-background: #3d524b;
+$shadow-color: rgba(36, 46, 61, 0.568);
+$header-footer-background: #FBF3E9;
+$header-footer-foreground: white;
+$header-footer-border: #B99D88;
 $gunmetal-light: #27373fff;
 $cafe-noir: #4f3824ff;
 $copper-red: #d1603dff;
@@ -108,12 +117,6 @@ $orange-peel: rgb(255, 173, 79);
   src: url(../theme/font/Unicorn.ttf);
 }
 
-body {
-  background: linear-gradient(180deg, hsla(191, 59%, 94%, 1) 0%, hsla(27, 100%, 93%, 1) 100%);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
 
 
 

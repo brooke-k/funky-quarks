@@ -6,8 +6,7 @@
  */
 
 import * as React from "react";
-import "./theme/App.scss";
-import "./theme/variables.scss";
+import "./theme/models.scss";
 import { Header } from "./components/Header";
 import { MemoryRouter as Router, Link, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
