@@ -24,8 +24,9 @@ $header-footer-foreground: #34413d;
 $header-footer-border-op: #B99D88;
 $header-footer-border-tr: #b99d88ab;
 
-
-
+$other-border: #99bb7c67;
+$fq-nav: #2a2830;
+$paragraph-bg: #faf7f4;
 $gunmetal-light: #27373fff;
 $cafe-noir: #4f3824ff;
 $copper-red: #d1603dff;
@@ -141,20 +142,30 @@ $orange-peel: rgb(255, 173, 79);
 
 
 .navBar {
-  background: $uni-purple;
+  background: $fq-nav;
   display: block;
-  position: relative;
-  margin-top: 2vh;
-  margin-right: 2vw;
+  position: fixed;
+  top: 44px;
+  right: 12px;
+  left: 82vw;
+  margin:
+    1.2vh 0 1.2vh 0px;
   margin-left: 0vw;
-  float: right;
-  font-family: 'Creato Bold';
+  bottom: 28px;
+  float: none;
+  font-family: 'Lato Bold';
   color: $orange-peel;
   text-align: right;
-  width: 13vw;
-  border-radius: 0.75vw;
-  font-weight: 500;
-  filter: drop-shadow(0.3vw 0.5vh 0.2vw rgba(82, 68, 92, 0.658));
+  width: auto;
+  height: auto;
+  border-radius: 4px;
+  font-weight: normal;
+  font-size: 16px;
+  padding: 8px;
+  border-width: 2px;
+  border-color: $other-border;
+  border-style: solid;
+
 
 
 }

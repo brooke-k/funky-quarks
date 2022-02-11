@@ -37,10 +37,9 @@ const App: React.FC = () => {
             <Route path="/home" element={<Home />}></Route>
             <Route path="/unicorns" element={<Unicorns />}></Route>
             <Route path="/movement" element={<Movement />}></Route>
-            <Route path="/" element={<ContainerBox />}></Route>
+            <Route path="/" element={<Home />}></Route>
           </Routes>
         </div>
-        <ContainerBox />
       </Router>
     </>
   );

@@ -1,17 +1,1 @@
 @import '../theme/variables.scss';
-
-.containerBox {
-  position: fixed;
-  float: none;
-  display: flexbox;
-  margin:
-    1.2vh 0px 1.2vh 0px;
-  height: auto;
-  width: auto;
-  background-color: transparent !important;
-  z-index: -1;
-  bottom: 28px;
-  top: 44px;
-  right: 12px;
-  left: 12px;
-}

@@ -8,3 +8,26 @@ body {
   margin-block: 0;
   margin-inline: 0;
 }
+
+.mainContentFrame {
+  position: fixed;
+  float: none;
+  display: flex;
+  margin:
+    1.2vh 0px 1.2vh 0px;
+  height: auto;
+  width: auto;
+  background-color: transparent;
+  z-index: -1;
+  bottom: 28px;
+  top: 44px;
+  right: 19vw;
+  left: 12px;
+  padding: 0 0;
+  justify-content: space-around;
+  row-gap: 4px;
+  column-gap: 4px;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  align-items: stretch;
+}
