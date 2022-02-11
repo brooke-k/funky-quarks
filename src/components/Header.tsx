@@ -5,8 +5,8 @@ import React from "react";
 export class Header extends React.Component {
   render() {
     return (
-      <div>
-        <h1 className="header">Funky Quarks</h1>
+      <div className="headerBox">
+        <h1 className="headerLogo">Funky Quarks</h1>
       </div>
     );
   }

@@ -17,11 +17,15 @@ $fq-black:#1B1726;
 $fq-tan: #B99D88;
 $fq-white:#FBF3E9;
 
-$app-background: #3d524b;
+$app-background: #6d837b;
 $shadow-color: rgba(36, 46, 61, 0.568);
 $header-footer-background: #FBF3E9;
-$header-footer-foreground: white;
-$header-footer-border: #B99D88;
+$header-footer-foreground: #34413d;
+$header-footer-border-op: #B99D88;
+$header-footer-border-tr: #b99d88ab;
+
+
+
 $gunmetal-light: #27373fff;
 $cafe-noir: #4f3824ff;
 $copper-red: #d1603dff;
@@ -59,25 +63,21 @@ $orange-peel: rgb(255, 173, 79);
 @font-face {
   font-family: 'Lato';
   src: url(../theme/font/Lato/Lato-Regular.ttf);
-  font-weight: normal;
 }
 
 @font-face {
-  font-family: 'Lato';
+  font-family: 'Lato Light';
   src: url(../theme/font/Lato/Lato-Light.ttf);
-  font-weight: lighter;
 }
 
 @font-face {
-  font-family: 'Lato';
+  font-family: 'Lato Bold';
   src: url(../theme/font/Lato/Lato-Bold.ttf);
-  font-weight: bold;
 }
 
 @font-face {
-  font-family: 'Lato';
+  font-family: 'Lato Black';
   src: url(../theme/font/Lato/Lato-Black.ttf);
-  font-weight: bolder;
 }
 
 @font-face {
