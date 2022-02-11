@@ -19,30 +19,24 @@ div.footerBox {
   border-style: solid;
 }
 
-p.footerText {
+div.footerText {
   bottom: 1px;
   font-size: 10px;
   font-family: 'Lato';
   letter-spacing: 0.15vw;
-  opacity: 70%;
+  opacity: 30%;
   color:
     $header-footer-foreground;
-  transition: 375ms ease-in-out;
   font-weight: normal;
   text-align: right;
   text-transform: uppercase;
   margin: 0;
   padding-top: 2px;
   padding-right: 1.5vw;
+  transition: 150ms ease-out;
+
 }
 
-h1::before,
-h1::after {
-  position: absolute;
-  content: "";
-  z-index: -1;
-}
-
-h1.footer:hover {
-  letter-spacing: 1.5vw;
+div.footerText:hover {
+  opacity: 100%;
 }
