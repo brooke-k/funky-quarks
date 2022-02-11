@@ -13,11 +13,12 @@ import Home from "./pages/Home";
 import Unicorns from "./pages/Unicorns";
 import { Footer } from "./components/Footer";
 import Movement from "./pages/Movement";
+import { ContainerBox } from "./components/ContainerBox";
 const App: React.FC = () => {
   return (
     <>
       <Router>
-        <Header />
+        <Header /> <Footer />
         <div>
           <nav className="navBar">
             <ul className="navBar list">
@@ -36,10 +37,10 @@ const App: React.FC = () => {
             <Route path="/home" element={<Home />}></Route>
             <Route path="/unicorns" element={<Unicorns />}></Route>
             <Route path="/movement" element={<Movement />}></Route>
-            <Route path="/" element={<Home />}></Route>
+            <Route path="/" element={<ContainerBox />}></Route>
           </Routes>
         </div>
-        <Footer />
+        <ContainerBox />
       </Router>
     </>
   );
