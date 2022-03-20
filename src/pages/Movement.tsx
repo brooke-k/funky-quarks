@@ -1,80 +1,23 @@
 import React, { useEffect, useState } from "react";
 import "../theme/variables.scss";
-import "./Movement.scss";
 
 const Movement: React.FC = () => {
   const [isShining, setIsShining] = useState(false);
-  var shinyElement = document.getElementById("shinyElement");
-  useEffect(() => {
-    const shine = (e: any) => {
-      setIsShining(true);
+  //   var shinyElement = document.getElementById("shinyElement");
+  //   useEffect(() => {
+  //     const shine = (e: any) => {
+  //       setIsShining(true);
 
-      setTimeout(() => setIsShining(false), 10);
-    };
+  //       setTimeout(() => setIsShining(false), 10);
+  //     };
 
-    shinyElement.addEventListener("keypress", shine);
-    return () => {
-      shinyElement.removeEventListener("keypress", shine);
-    };
-  });
+  //     shinyElement.addEventListener("keypress", shine);
+  //     return () => {
+  //       shinyElement.removeEventListener("keypress", shine);
+  //     };
+  //   });
 
-  return (
-    <div className="gridContainment">
-      <div className="gridButton b1">
-        <div
-          id="shinyElement"
-          className={
-            isShining ? "gridButton shinyOnly active" : "gridButton shinyOnly"
-          }
-        />
-      </div>
-      <div className="gridButton b1">
-        <div className="gridButton shinyOnly" id="shinyElement" />
-      </div>
-      <div className="gridButton b1">
-        <div className="gridButton shinyOnly" id="shinyElement" />
-      </div>
-      <div className="gridButton b1">
-        <div className="gridButton shinyOnly" id="shinyElement" />
-      </div>
-      <div className="gridButton b2">
-        <div className="gridButton shinyOnly" id="shinyElement" />
-      </div>
-      <div className="gridButton b2">
-        <div className="gridButton shinyOnly" id="shinyElement" />
-      </div>
-      <div className="gridButton b2">
-        <div className="gridButton shinyOnly" id="shinyElement" />
-      </div>
-      <div className="gridButton b2">
-        <div className="gridButton shinyOnly" id="shinyElement" />
-      </div>
-      <div className="gridButton b3">
-        <div className="gridButton shinyOnly" id="shinyElement" />
-      </div>
-      <div className="gridButton b3">
-        <div className="gridButton shinyOnly" id="shinyElement" />
-      </div>
-      <div className="gridButton b3">
-        <div className="gridButton shinyOnly" id="shinyElement" />
-      </div>
-      <div className="gridButton b3">
-        <div className="gridButton shinyOnly" id="shinyElement" />
-      </div>
-      <div className="gridButton b4">
-        <div className="gridButton shinyOnly" id="shinyElement" />
-      </div>
-      <div className="gridButton b4">
-        <div className="gridButton shinyOnly" id="shinyElement" />
-      </div>
-      <div className="gridButton b4">
-        <div className="gridButton shinyOnly" id="shinyElement" />
-      </div>
-      <div className="gridButton b4">
-        <div className="gridButton shinyOnly" id="shinyElement" />
-      </div>
-    </div>
-  );
+  return <div></div>;
 };
 
 export default Movement;

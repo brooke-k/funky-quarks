@@ -1,5 +1,4 @@
 import React from "react";
-import "../components/ContainerBox.scss";
 
 export function Containment(props: any) {
   return <div className="containerBox">{this.props}</div>;

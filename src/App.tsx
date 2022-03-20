@@ -22,15 +22,15 @@ const App: React.FC = () => {
         <div>
           <nav className="navBar">
             <ul className="navBar list">
-              <li>
+              <button>
                 <Link to="/home">Home</Link>
-              </li>
-              <li>
+              </button>
+              <button>
                 <Link to="/unicorns">Unicorns</Link>
-              </li>
-              <li>
+              </button>
+              <button>
                 <Link to="/movement">Movement</Link>
-              </li>
+              </button>
             </ul>
           </nav>
           <Routes>

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import "../pages/Unicorn.scss";
 
 function randomLetter() {
   if (Math.floor(Math.random()) == 0) {
@@ -27,29 +26,33 @@ function randomNumber() {
 const mouseTarget = document.getElementById("mouseTarget");
 
 const Home: React.FC = () => {
-  const [ranNum, setRanNum] = useState<number>(randomNumber());
-
-  useEffect(() => {
-    const update = (e: any) => {
-      setRanNum(randomNumber());
-    };
-
-    window.addEventListener("keypress", update);
-
-    return () => {
-      window.removeEventListener("keypress", update);
-    };
-  }, [10]);
-
-  return (
-    <>
-      {" "}
-      <div id="mouseTarget" className="primaryText unicornParagraph">
-        {" "}
-        {getLetter(ranNum)}
-      </div>{" "}
-    </>
-  );
+  return <div></div>;
 };
+
+// const Home: React.FC = () => {
+//   const [ranNum, setRanNum] = useState<number>(randomNumber());
+
+//   useEffect(() => {
+//     const update = (e: any) => {
+//       setRanNum(randomNumber());
+//     };
+
+//     window.addEventListener("keypress", update);
+
+//     return () => {
+//       window.removeEventListener("keypress", update);
+//     };
+//   }, [10]);
+
+//   return (
+//     <>
+//       {" "}
+//       <div id="mouseTarget" className="primaryText unicornParagraph">
+//         {" "}
+//         {getLetter(ranNum)}
+//       </div>{" "}
+//     </>
+//   );
+// };
 
 export default Home;
