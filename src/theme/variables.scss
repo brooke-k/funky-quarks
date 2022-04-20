@@ -11,9 +11,20 @@ $fq-white-shade: #e3f2fd;
 $fq-brown: #634133;
 $fq-brown-sugar: #b86f52;
 $fq-sienna: #E0774E;
-$fq-morning-blue: #8aa29e;
+$fq-morning-blue: #8a9795;
+$fq-morning-blue-light: #bbcac8;
 $fq-dark-chocolate: #241B17;
 $fq-black: #0E0C0B;
 
 $background: var($fq-white);
 $foreground: var($fq-white);
+
+@font-face {
+  font-family: 'Lato Black';
+  src: url(../theme/font/Lato/Lato-Black.ttf);
+}
+
+@font-face {
+  font-family: 'Lato Bold';
+  src: url(../theme/font/Lato/Lato-Bold.ttf);
+}

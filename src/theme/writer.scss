@@ -1,0 +1,132 @@
+@import url("./root.scss");
+
+*.cold {
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 600ms;
+}
+
+*.warm {
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 600ms;
+}
+
+$background-a: #000d1d;
+$border-a: #dcfff7;
+$glow-light-a: #93e9ff6b;
+$glow-bold-a: #00d9ff;
+$glow-mid-a: #34bfff;
+$glow-low-a: #1900ff;
+
+$background-b: #140a06;
+$border-b: #fff7dc;
+$glow-light-b: #ffa7746b;
+$glow-bold-b: #ff8800;
+$glow-mid-b: #ff5e00;
+$glow-low-b: #ff4800;
+
+.writerBackground {
+  margin: 0rem;
+  padding: 0rem 0rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 0px;
+  width: auto;
+  height: auto;
+}
+
+.writerBackground.cold {
+  background: $background-a;
+  border-color: $border-a;
+  box-shadow: inset 0px 0px 4px $glow-light-a, inset -0px -0px 12px $glow-bold-a, inset -0px -0px 20px $glow-mid-a, inset -0px -0px 48px $glow-low-a;
+}
+
+.writerBackground.warm {
+  background: $background-b;
+  border-color: $border-b;
+  box-shadow: inset 0px 0px 4px $glow-light-b, inset -0px -0px 12px $glow-bold-b, inset -0px -0px 20px $glow-mid-b, inset -0px -0px 48px $glow-low-b;
+}
+
+.lightswitch {
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 4px;
+  font-family: 'Overpass Bold';
+  text-transform: uppercase;
+  padding: 1.5ex;
+  font-size: 12pt;
+  background-color: transparent;
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+}
+
+.lightswitch.cold {
+  text-shadow: 0px 0px 4px $glow-light-a, -0px -0px 8px $glow-bold-a, -0px -0px 12px $glow-mid-a, -0px -0px 32px $glow-low-a;
+  box-shadow: 0px 0px 4px $glow-light-a, -0px -0px 12px $glow-bold-a, -0px -0px 16px $glow-mid-a, -0px -0px 32px $glow-low-a, inset 0px 0px 4px $glow-light-a, inset -0px -0px 12px $glow-bold-a, inset -0px -0px 16px $glow-mid-a, inset -0px -0px 32px $glow-low-a;
+  border-color: $border-a;
+  color: $border-a;
+}
+
+.lightswitch.warm {
+  text-shadow: 0px 0px 4px $glow-light-b, -0px -0px 8px $glow-bold-b, -0px -0px 12px $glow-mid-b, -0px -0px 32px $glow-low-b;
+  box-shadow: 0px 0px 4px $glow-light-b, -0px -0px 12px $glow-bold-b, -0px -0px 16px $glow-mid-b, -0px -0px 32px $glow-low-b, inset 0px 0px 4px $glow-light-b, inset -0px -0px 12px $glow-bold-b, inset -0px -0px 16px $glow-mid-b, inset -0px -0px 32px $glow-low-b;
+  border-color: $border-b;
+  color: $border-b;
+}
+
+.writerDisplay {
+  position: absolute;
+  font-size: 14pt;
+  padding: 0 1vw;
+  margin: 0;
+  right: 0vmin;
+  font-family: 'Esoterrae';
+  overflow: hidden;
+  word-wrap: break-word;
+  z-index: 0;
+  max-height: 98vh;
+  max-width: 98vw;
+  line-height: 240%;
+}
+
+.writerDisplay.cold {
+  color: $border-a;
+  text-shadow: 0px 0px 4px $glow-light-a, -0px -0px 12px $glow-bold-a, -0px -0px 20px $glow-mid-a, -0px -0px 38px $glow-low-a;
+}
+
+.writerDisplay.warm {
+  color: $border-b;
+  text-shadow: 0px 0px 4px $glow-light-b, -0px -0px 12px $glow-bold-b, -0px -0px 20px $glow-mid-b, -0px -0px 38px $glow-low-b;
+}
+
+.writerInput,
+.writerInput:focus {
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  height: 3vmin;
+  width: 3vmin;
+  min-width: 14pt;
+  min-height: 14pt;
+  z-index: 1;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 3vmin;
+  background-color: transparent;
+  position: absolute;
+  color: transparent;
+}
+
+
+.writerInput.cold {
+  box-shadow: 0px 0px 4px $glow-light-a, -0px -0px 12px $glow-bold-a, -0px -0px 16px $glow-mid-a, -0px -0px 32px $glow-low-a, inset 0px 0px 4px $glow-light-a, inset -0px -0px 12px $glow-bold-a, inset -0px -0px 16px $glow-mid-a, inset -0px -0px 32px $glow-low-a;
+  border-color: $border-a;
+}
+
+.writerInput.warm {
+  box-shadow: 0px 0px 4px $glow-light-b, -0px -0px 12px $glow-bold-b, -0px -0px 16px $glow-mid-b, -0px -0px 32px $glow-low-b, inset 0px 0px 4px $glow-light-b, inset -0px -0px 12px $glow-bold-b, inset -0px -0px 16px $glow-mid-b, inset -0px -0px 32px $glow-low-b;
+  border-color: $border-b;
+}

@@ -1,0 +1,66 @@
+@import '../theme/variables.scss';
+@import '../theme/models.scss';
+
+@font-face {
+  font-family: 'Overpass';
+  src: url(../theme/font/overpass/Overpass-VariableFont_wght.ttf);
+
+}
+
+.HeadingContainer {
+  background: $fq-morning-blue;
+  bottom: 86vh;
+  left: 0;
+  right: 0;
+  width: auto;
+  padding: 1vh 1vmin;
+  position: fixed;
+  height: 14vh;
+  z-index: -1;
+
+
+  // background-color: transparent;
+}
+
+.HeaderText {
+  font-family: 'Lato Bold';
+  font-weight: 900;
+  letter-spacing: 0.30em;
+  color: $fq-white;
+  font-size: 5vmin;
+  text-transform: uppercase;
+  text-shadow: 0px -15px 20px rgba(36, 27, 23, 0.4), 0px -10px 13px rgba(36, 27, 23, 0.35), 0px -6px 8px rgba(36, 27, 23, 0.3), 0px -4px 4px rgba(36, 27, 23, 0.24), 0px -2px 2px rgba(36, 27, 23, 0.17);
+  line-height: 140%;
+  text-align: left;
+
+}
+
+.HeaderBox {
+  bottom: 84vh;
+  left: 0;
+  width: 30vmin;
+  padding: 1vh 1vmin;
+  position: fixed;
+  height: 14vh;
+  border-style: solid;
+  border-color: $fq-morning-blue-light;
+  border-width: 0 0 3px 0;
+
+  // height: 14vmin;
+  // width: 30vmin;
+  // bottom: inherit;
+  // margin-top: 0vmin;
+  // margin-bottom: 0;
+  // margin-left: 5px;
+  // padding: 2vmin;
+  background-color: $fq-morning-blue;
+}
+
+.CreditBox {
+  background: $fq-white-shade;
+  top: 0px;
+  right: 0px;
+  height: 2vmin;
+  width: 100%;
+  position: fixed;
+}

@@ -1,0 +1,76 @@
+@font-face {
+  font-family: 'Lato Black';
+  src: url(../theme/font/Lato/Lato-Black.ttf);
+}
+
+@font-face {
+  font-family: 'Lato Bold';
+  src: url(../theme/font/Lato/Lato-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Overpass Thin';
+  src: url(../theme/font/overpass/Overpass-VariableFont_wght.ttf);
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: 'Overpass ExtraLight';
+  src: url(../theme/font/overpass/Overpass-VariableFont_wght.ttf);
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'Overpass Light';
+  src: url(../theme/font/overpass/Overpass-VariableFont_wght.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Overpass Regular';
+  src: url(../theme/font/overpass/Overpass-VariableFont_wght.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Overpass Medium';
+  src: url(../theme/font/overpass/Overpass-VariableFont_wght.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Overpass SemiBold';
+  src: url(../theme/font/overpass/Overpass-VariableFont_wght.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Overpass Bold';
+  src: url(../theme/font/overpass/Overpass-VariableFont_wght.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Overpass ExtraBold';
+  src: url(../theme/font/overpass/Overpass-VariableFont_wght.ttf);
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'Overpass Black';
+  src: url(../theme/font/overpass/Overpass-VariableFont_wght.ttf);
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: 'Esoterrae';
+  src: url(../theme/font/Esoterrae.ttf);
+}
+
+:root {
+  margin: 0;
+  padding: 0;
+  font-size: 12pt;
+  font-family: 'Overpass Regular';
+  font-weight: normal;
+}

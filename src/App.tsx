@@ -14,32 +14,36 @@ import Unicorns from "./pages/Unicorns";
 import { Footer } from "./components/Footer";
 import Movement from "./pages/Movement";
 import { ContainerBox } from "./components/ContainerBox";
+import Writer from "./pages/Writer";
 const App: React.FC = () => {
   return (
     <>
       <Router>
-        <Header /> <Footer />
+        {/* <Header />
+        <Footer />
         <div>
-          <nav className="navBar">
-            <ul className="navBar list">
-              <button>
-                <Link to="/home">Home</Link>
-              </button>
-              <button>
-                <Link to="/unicorns">Unicorns</Link>
-              </button>
-              <button>
-                <Link to="/movement">Movement</Link>
-              </button>
+          <nav className="NavBar">
+            <ul className="NavList">
+              <Link className="NavButton Link" to="/home">
+                Home
+              </Link>
+
+              <Link className="NavButton Link" to="/unicorns">
+                Unicorns
+              </Link>
+              <Link className="NavButton Link" to="/movement">
+                Movement
+              </Link>
             </ul>
           </nav>
-          <Routes>
-            <Route path="/home" element={<Home />}></Route>
-            <Route path="/unicorns" element={<Unicorns />}></Route>
-            <Route path="/movement" element={<Movement />}></Route>
-            <Route path="/" element={<Home />}></Route>
-          </Routes>
-        </div>
+        </div> */}
+
+        <Routes>
+          <Route path="/home" element={<Home />}></Route>
+          <Route path="/unicorns" element={<Unicorns />}></Route>
+          <Route path="/movement" element={<Movement />}></Route>
+          <Route path="/" element={<Writer />}></Route>
+        </Routes>
       </Router>
     </>
   );

@@ -1,0 +1,124 @@
+@import url("./root.scss");
+
+*.lightOff {
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 600ms;
+}
+
+*.lightOn {
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 600ms;
+}
+
+
+.homeTitle {
+  font-family: 'Overpass SemiBold';
+  font-size: 80pt;
+  letter-spacing: 1rem;
+  text-transform: lowercase;
+  color: white;
+}
+
+.homeTitle.lightOn {
+  text-shadow: 0px 0px 8px rgba(255, 147, 179, 0.42), -0px -0px 16px #ff0080, -0px -0px 24px rgb(255, 52, 221), -0px -0px 46px rgb(174, 0, 255);
+  -webkit-text-stroke: 3px rgb(255, 220, 247);
+  -webkit-text-fill-color: transparent;
+}
+
+.homeTitle.lightOff {
+  text-shadow: 2px 2px 42px #ff008000, 2px 2px 42px #ff008000, 2px 2px 42px rgba(255, 52, 221, 0.0), 2px 2px 42px rgba(174, 0, 255, 0.0);
+  -webkit-text-stroke: 3px rgb(24, 12, 21);
+  -webkit-text-fill-color: transparent;
+}
+
+
+.homeBackground {
+  margin: 0rem;
+  padding: 2rem 6rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgb(0, 0, 0);
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 0px;
+  border-color: rgb(24, 12, 21);
+}
+
+.homeBackground.lightOff {
+  background: rgb(0, 0, 0);
+  border-color: rgb(24, 12, 21);
+  box-shadow: inset 2px 2px 42px #ff008000, inset 2px 2px 42px #ff008000, inset 2px 2px 42px rgba(255, 52, 221, 0.0), inset 2px 2px 42px rgba(174, 0, 255, 0.0);
+
+}
+
+.homeBackground.lightOn {
+  background: rgb(19, 0, 37);
+  border-color: rgb(255, 220, 247);
+  box-shadow: inset 0px 0px 4px rgba(255, 147, 179, 0.42), inset -0px -0px 12px #ff0080, inset -0px -0px 16px rgb(255, 52, 221), inset -0px -0px 32px rgb(174, 0, 255);
+}
+
+.homepageButton {
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 4px;
+  font-family: 'Overpass Bold';
+  text-transform: uppercase;
+  padding: 1.5ex;
+  font-size: 12pt;
+  background-color: transparent;
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+}
+
+.homepageButton.lightOn {
+  text-shadow: 0px 0px 4px rgba(255, 147, 179, 0.42), -0px -0px 8px #ff0080, -0px -0px 12px rgb(255, 52, 221), -0px -0px 32px rgb(174, 0, 255);
+  box-shadow: 0px 0px 4px rgba(255, 147, 179, 0.42), -0px -0px 12px #ff0080, -0px -0px 16px rgb(255, 52, 221), -0px -0px 32px rgb(174, 0, 255), inset 0px 0px 4px rgba(255, 147, 179, 0.42), inset -0px -0px 12px #ff0080, inset -0px -0px 16px rgb(255, 52, 221), inset -0px -0px 32px rgb(174, 0, 255);
+  color: rgb(255, 220, 247);
+  border-color: rgb(255, 220, 247);
+}
+
+.homepageButton.lightOff {
+  text-shadow: 2px 2px 42px #ff008000, 2px 2px 42px #ff008000, 2px 2px 42px rgba(174, 0, 255, 0.0), 2px 2px 42px rgba(174, 0, 255, 0.0);
+  box-shadow: 2px 2px 42px #ff008000, 2px 2px 42px #ff008000, 2px 2px 42px rgba(174, 0, 255, 0.0), 2px 2px 42px rgba(174, 0, 255, 0.0), inset 2px 2px 42px #ff008000, inset 2px 2px 42px #ff008000, inset 2px 2px 42px rgba(174, 0, 255, 0.0), inset 2px 2px 42px rgba(174, 0, 255, 0.0);
+  border-color: rgb(24, 12, 21);
+  color: rgb(24, 12, 21);
+}
+
+// .homepageButton.lightOff:hover {
+//   text-shadow: 2px 2px 42px #ff008000, 2px 2px 42px #ff008000, 2px 2px 42px rgba(66, 0, 94, 0.5), 2px 2px 42px rgba(174, 0, 255, 0.0);
+//   box-shadow: 2px 2px 42px #ff008000, 2px 2px 42px #ff008000, 2px 2px 42px rgba(66, 0, 94, 0.5), 2px 2px 42px rgba(174, 0, 255, 0.0), inset 2px 2px 42px #ff008000, inset 2px 2px 42px #ff008000, inset 2px 2px 42px rgba(66, 0, 94, 0.5), inset 2px 2px 42px rgba(174, 0, 255, 0.0);
+//   border-color: rgb(97, 23, 126);
+//   color: rgb(97, 23, 126);
+// }
+
+.homeSignature {
+  position: absolute;
+  bottom: 0rem;
+  right: 2rem;
+  font-size: 11pt;
+  letter-spacing: 6px;
+}
+
+h3 {
+  font-size: 36pt;
+  font-family: 'Overpass Thin';
+  letter-spacing: 1.5ex;
+}
+
+.homeSignature.lightOn,
+h3.lightOn {
+  color: transparent;
+  text-shadow: 2px 2px 42px #ff008000, 2px 2px 42px #ff008000, 2px 2px 42px #ff34dd00, 2px 2px 42px #ae00ff00;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 600ms;
+
+}
+
+.homeSignature.lightOff,
+h3.lightOff {
+  text-shadow: 0px 0px 4px rgba(255, 147, 179, 0.42), -0px -0px 8px #ff0080, -0px -0px 12px rgb(255, 52, 221), -0px -0px 32px rgb(174, 0, 255);
+  color: rgb(255, 220, 247);
+  transition: cubic-bezier(0.6, 0.04, 0.98, 0.335) 200ms;
+
+}
